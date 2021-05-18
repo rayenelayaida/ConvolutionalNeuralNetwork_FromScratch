@@ -20,7 +20,7 @@ gcc -O3 -fopenmp -lm Convolutional_Neural_Network.c -o Convolutional_Neural_Netw
 ```
 
 ```bash
-Convolutional_Neural_Network.exe "vgg16_weights.txt" "test\filelist.txt" "debug_c.txt"
+Convolutional_Neural_Network.exe "vgg16_weights.txt" "test\images_list.txt" "result_prediction.txt"
 ```
 
 
