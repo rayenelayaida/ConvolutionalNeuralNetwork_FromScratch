@@ -457,7 +457,7 @@ int save_dense_to_file(float *mem, int shape0) {
 	int position_pred_class = 0;
 	float val_pred_class = 0;
 	int cpt = 0;
-	out = fopen("debug_c.txt", "w");
+	out = fopen("result_prediction.txt", "w");
 	for (i = 0; i < shape0; i++) {
 		fprintf(out, "%.12lf\n", mem[i]);
 		if (val_pred_class<mem[i])
@@ -770,7 +770,7 @@ int main(int argc, char *argv[]) {
 
 		fclose(file_list);
 		reponse = 0;
-		printf("\nSi vous voulez predire les classes de d'autres images, veuillez remplir a nouveau le fichier filelist, le sauvegarder puis entrer 1.\n Sinon entrer une autre touche\n");
+		printf("\nSi vous voulez predire les classes de d'autres images, veuillez remplir a nouveau le fichier images_list, le sauvegarder puis entrer 1.\n Sinon entrer une autre touche\n");
 		scanf("%d",&reponse);
 	}while(reponse == 1);
 	free_all();
